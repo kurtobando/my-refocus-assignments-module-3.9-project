@@ -7,6 +7,7 @@
     "date": "December 5, 2022",
     "likes": 2540,
     "isLiked": true,
+    "image": "/images/Image-1.png",
     "comments": [
       {
         "text": "YES! Can't wait to see you guys perform in the U.S.! 🙌",
@@ -32,6 +33,7 @@
     "date": "January 10, 2023",
     "likes": 4789,
     "isLiked": false,
+    "image": "/images/Image-2.png",
     "comments": [
       {
         "text": "Looks like a fun night! Wish I could've been there! 😍",
@@ -57,6 +59,7 @@
     "date": "March 15, 2023",
     "likes": 3522,
     "isLiked": false,
+    "image": "/images/Image-3.png",
     "comments": [
       {
         "text": "Happy Birthday Nisoo! You guys are friendship goals! 🥳",
@@ -82,6 +85,7 @@
     "date": "April 20, 2023",
     "likes": 6802,
     "isLiked": false,
+    "image": "/images/Image-4.png",
     "comments": [
       {
         "text": "Can't wait to see you guys perform again! -",
@@ -114,6 +118,7 @@
     "text": "ARMY, we can't thank you enough for all the love and support you've shown us over the years. We're constantly blown away by your dedication and passion. You inspire us to keep pushing ourselves and making music that we're proud of. We love you all! ❤️ #MLS #ARMY #ThankYou",
     "likes": 4826,
     "isLiked": true,
+    "image": "/images/Image-5.png",
     "comments": [
       {
         "text": "You guys are the reason why I smile every day. Thank YOU for always being there for us and creating music that moves our souls 🥺💜",
@@ -146,6 +151,7 @@
     "text": "Pinks, the wait is over! Our new music video is out now! We worked so hard on this one, and we hope you love it as much as we do. Check it out and let us know what you think in the comments! ❤️ #DARKPINK #NewMusicVideo #LennieWin",
     "likes": 312,
     "isLiked": true,
+    "image": "/images/Image-6.png",
     "comments": [
       {
         "text": "OMG Lennie, the music video is AMAZING! I've been playing it on repeat all day. You guys really outdid yourselves this time! 🔥 -",
@@ -178,6 +184,7 @@
     "text": "BCTzens, let's get the weekend started off right! Let's dance together and have some fun. What are some of your favorite dance moves or songs to get you hyped? Share them in the comments! 🎉🔥",
     "likes": 2706,
     "isLiked": true,
+    "image": "/images/Image-7.png",
     "comments": [
       {
         "text": "I love BCT's energy and choreography so much! You guys always make me want to dance and move. My favorite move is the 'Point Back' footwork. 💃🏽",
@@ -210,6 +217,7 @@
     "text": "Pinks, we're excited to announce that we have some new music coming your way very soon! We've been working hard on this project and can't wait for you all to hear it. Stay tuned for more updates! 🖤💗",
     "likes": 2407,
     "isLiked": false,
+    "image": "/images/Image-8.png",
     "comments": [
       {
         "text": "YESSS! I can't wait to hear what you've been working on. Darkpink always delivers the best music. Love you guys! -",
@@ -235,6 +243,7 @@
     "text": "ARMY, you were absolutely amazing tonight at our concert! We felt your love and energy the whole time and it was an unforgettable experience. We can't wait to come back and perform for you all again. Thank you for making this night so special. 💜❤️",
     "likes": 3508,
     "isLiked": true,
+    "image": "/images/Image-9.png",
     "comments": [
       {
         "text": "I wish I could've been there! Your music always lifts my mood and fills me with joy. Please come back to my city soon! 💜",
@@ -267,6 +276,7 @@
     "date": "August 2 2023",
     "likes": 1204,
     "isLiked": false,
+    "image": "/images/Image-10.png",
     "comments": [
       {
         "text": "We're already obsessed with your new music! You guys never disappoint 🙌 #ECHO",
@@ -299,6 +309,7 @@
     "date": "December 12 2023",
     "likes": 2304,
     "isLiked": false,
+    "image": "/images/Image-11.png",
     "comments": [
       {
         "text": "You are such an amazing role model for all of us, AY. Thank you for always staying true to yourself 💜 #KpopLove",
@@ -331,6 +342,7 @@
     "date": "June 27 2023",
     "likes": 3400,
     "isLiked": true,
+    "image": "/images/Image-12.png",
     "comments": [
       {
         "text": "You guys deserve this break so much! Enjoy the sun, sand, and sea 💙 #BlueCotton",
@@ -356,6 +368,7 @@
     "date": "April 14 2023",
     "likes": 2756,
     "isLiked": true,
+    "image": "/images/Image-1.png",
     "comments": [
       {
         "text": "We love you guys so much! Thank you for always inspiring us and making us smile ❤️ #ARMYForever",
@@ -388,6 +401,7 @@
     "date": "May 24, 2023",
     "likes": 2404,
     "isLiked": false,
+    "image": "/images/Image-2.png",
     "comments": [
       {
         "text": "Aww, that's so cute Minoo! My favorite childhood memory is spending summers at the beach with my family ☀️🏖️ - ",
@@ -420,6 +434,7 @@
     "date": "June 3, 2023",
     "likes": 1876,
     "isLiked": false,
+    "image": "/images/Image-3.png",
     "comments": [
       {
         "text": "I can't wait to hear it, LN! You always bring something fresh and unique to your music 🙌🏻",
@@ -452,6 +467,7 @@
     "date": "June 22, 2023",
     "likes": 1969,
     "isLiked": true,
+    "image": "/images/Image-4.png",
     "comments": [
       {
         "text": "You look absolutely stunning Nisoo! 😍💜",
@@ -484,6 +500,7 @@
     "date": "August 8, 2023",
     "likes": 1506,
     "isLiked": false,
+    "image": "/images/Image-5.png",
     "comments": [
       {
         "text": "Yessss, can't wait LN! 😍🔥",
@@ -516,6 +533,7 @@
     "date": "September 1, 2023",
     "likes": 1204,
     "isLiked": false,
+    "image": "/images/Image-6.png",
     "comments": [
       {
         "text": "I'm sure you guys will rock the stage, Raymond! 🎤💜",
@@ -548,6 +566,7 @@
     "date": "October 13, 2023",
     "likes": 1097,
     "isLiked": true,
+    "image": "/images/Image-7.png",
     "comments": [
       {
         "text": "I'm loving the new look, Nelson! 😍🔥 -",
@@ -580,6 +599,7 @@
     "date": "November 3, 2023",
     "likes": 965,
     "isLiked": false,
+    "image": "/images/Image-8.png",
     "comments": [
       {
         "text": "I'm down for some ice cream! 🍦😍",
