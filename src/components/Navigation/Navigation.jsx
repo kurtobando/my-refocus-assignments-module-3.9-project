@@ -1,12 +1,12 @@
-import { useState } from "react";
 import "./Navigation.css";
+import { useState } from "react";
 import Button from "../Button/Button";
 
 function Navigation() {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full">
+    <nav className="nav w-full">
       <div className="w-full max-width m-auto flex flex-col gap-2">
         <div className="flex items-center justify-between">
           <img src="/assets/logo.png" alt="logo" />

@@ -1,0 +1,22 @@
+footer {
+  box-sizing: border-box;
+  color: var(--white);
+  padding: 4rem 1rem;
+  background: var(--blue-dark);
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a,
+footer label {
+  color: var(--gray-slate-300);
+}
+
+@media only screen and (min-width: 600px) {
+  footer > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row !important;
+  }
+}

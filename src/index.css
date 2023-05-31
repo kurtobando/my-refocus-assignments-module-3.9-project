@@ -12,8 +12,8 @@
 
   --white: #fff;
   --blue: #0266ff;
-  --blue-dark: #10131c;
-  --blue-dark-2: #1a1d29;
+  --blue-dark: #192140;
+  --blue-dark-2: #10131c;
   --yellow: #dcf10d;
   --gray-slate-50: #d7f8ff;
   --gray-slate-100: #f8f9fc;
@@ -67,17 +67,17 @@
 .p-4 {
   padding: 4rem;
 }
-.m-1 {
-  margin: 1rem;
+.mt-1 {
+  margin-top: 0.5rem;
 }
-.m-2 {
-  margin: 2rem;
+.mt-2 {
+  margin-top: 1rem;
 }
-.m-3 {
-  margin: 3rem;
+.mt-3 {
+  margin-top: 1.5rem;
 }
-.m-4 {
-  margin: 4rem;
+.mt-4 {
+  margin-top: 2rem;
 }
 .m-auto {
   margin: 0 auto;
@@ -99,6 +99,27 @@
 }
 .font-medium {
   font-weight: 500;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
 }
 .text-slate-50 {
   color: var(--gray-slate-50);
