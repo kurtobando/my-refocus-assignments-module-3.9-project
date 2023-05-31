@@ -30,12 +30,12 @@ function Navigation() {
             <a href="/">Reviews</a>
           </div>
           <div className="flex flex-col gap-1">
-            <a href="/" className="text-slate-300 font-bold">
+            <a href="/" className="sign-up font-bold">
               Sign up
             </a>
             <a href="/">
               <Button theme="outline-rounded">
-                <span className="font-bold">Login</span>
+                <span className="font-bold">Log in</span>
               </Button>
             </a>
           </div>

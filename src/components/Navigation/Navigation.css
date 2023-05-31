@@ -16,8 +16,14 @@
   padding-bottom: 0.1rem;
   border-bottom: 1px solid var(--yellow);
 }
+nav a.sign-up {
+  color: var(--gray-slate-300);
+}
 .nav button {
   width: 100%;
+}
+.menu-content {
+  padding-bottom: 2rem;
 }
 .menu-content,
 .menu-content div {
@@ -43,6 +49,7 @@
     gap: 4rem;
     align-items: center;
     flex-wrap: wrap;
+    padding-bottom: unset;
   }
   .menu-content div {
     display: flex;
