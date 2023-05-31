@@ -39,9 +39,7 @@ function Posts() {
                     </Button>
                 </div>
                 <div>
-                    <Button theme='outline-rounded'>
-                        <ButtonAddPost />
-                    </Button>
+                    <ButtonAddPost />
                 </div>
             </div>
             <PostsContext.Provider value={{ posts, setPosts }}>

@@ -34,7 +34,10 @@
     gap: 0.6rem;
 }
 .post-image {
+    height: 200px;
     width: 100%;
+    object-fit: cover;
+
     border-radius: 0.5rem 0.5rem 0 0;
 }
 .post-meta {
