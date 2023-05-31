@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, createContext } from "react";
 import Button from "../components/Button/Button";
 import ButtonAddPost from "../components/ButtonAddPost/ButtonAddPost";
 import PostsList from "../components/PostsList/PostsList";
 import postsData from "../posts.json";
+
+export const PostsContext = createContext();
 
 function Posts() {
     const [posts, setPosts] = useState([]);
@@ -14,6 +16,12 @@ function Posts() {
         }
         setPosts(JSON.parse(localStorage.getItem("posts")));
     }, []);
+
+    useEffect(() => {
+        if (posts.length) {
+            localStorage.setItem("posts", JSON.stringify(posts));
+        }
+    }, [posts]);
 
     return (
         <section className='p-1 pt-2 m-auto max-width'>
@@ -36,7 +44,9 @@ function Posts() {
                     </Button>
                 </div>
             </div>
-            <PostsList posts={isFavorites ? posts.filter((post) => post.isLiked) : posts} />
+            <PostsContext.Provider value={{ posts, setPosts }}>
+                <PostsList posts={isFavorites ? posts.filter((post) => post.isLiked) : posts} />
+            </PostsContext.Provider>
         </section>
     );
 }

@@ -1,8 +1,20 @@
+import { useContext } from "react";
+import { PostsContext } from "../../pages/Posts";
 import "./Post.css";
 
 function Post({ post }) {
+    const { posts, setPosts } = useContext(PostsContext);
+
     function onLiked() {
-        console.log("Liked");
+        setPosts(
+            posts.map((item) => {
+                if (item.id === post.id) {
+                    item.isLiked = !item.isLiked;
+                    item.isLiked ? (item.likes += 1) : (item.likes -= 1);
+                }
+                return item;
+            })
+        );
     }
 
     return (
