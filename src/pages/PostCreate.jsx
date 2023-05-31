@@ -1,5 +1,5 @@
 function PostCreate() {
-    return <p>Post Create</p>
+    return <p>Post Create</p>;
 }
 
-export default PostCreate
+export default PostCreate;

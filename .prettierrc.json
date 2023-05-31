@@ -1,1 +1,6 @@
-{}
+{
+    "printWidth": 120,
+    "jsxSingleQuote": true,
+    "bracketSameLine": true,
+    "tabWidth": 4
+}

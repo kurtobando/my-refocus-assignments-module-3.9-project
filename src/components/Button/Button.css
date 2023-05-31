@@ -1,36 +1,36 @@
 button {
-  padding: 0.7rem;
-  outline: none;
-  border: none;
-  font-size: 0.875rem;
-  cursor: pointer;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    font-size: 0.875rem;
+    cursor: pointer;
 }
 .primary {
-  color: var(--white);
-  background: var(--blue);
-  border-radius: 0.5rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 0.5rem;
 }
 .primary-rounded {
-  color: var(--white);
-  background: var(--blue);
-  border-radius: 4rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 4rem;
 }
 .outline {
-  color: var(--blue);
-  background: transparent;
-  border: 1px solid var(--blue);
-  border-radius: 0.5rem;
+    color: var(--blue);
+    background: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 0.5rem;
 }
 .outline-rounded {
-  color: var(--blue);
-  background: transparent;
-  border: 1px solid var(--blue);
-  border-radius: 4rem;
+    color: var(--blue);
+    background: transparent;
+    border: 1px solid var(--blue);
+    border-radius: 4rem;
 }
 
 @media only screen and (min-width: 600px) {
-  button {
-    font-size: 1rem;
-    padding: 0.8rem 1.2rem;
-  }
+    button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
 }

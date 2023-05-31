@@ -1,73 +1,73 @@
 .post {
-  background: var(--gray-slate-100);
-  border-radius: 0.5rem;
+    background: var(--gray-slate-100);
+    border-radius: 0.5rem;
 }
 .post:hover {
-  background: var(--gray-slate-50);
+    background: var(--gray-slate-50);
 }
 .post h2 {
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .post p {
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: #625f87;
-  line-height: 140%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #625f87;
+    line-height: 140%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 .post-content {
-  padding: 1rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 .post-image {
-  width: 100%;
-  border-radius: 0.5rem 0.5rem 0 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 .post-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 0.5rem;
-  border-top: 0.5px solid #9d9db5;
-  font-size: 10px;
-  color: var(--gray-slate-300);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.5rem;
+    border-top: 0.5px solid #9d9db5;
+    font-size: 10px;
+    color: var(--gray-slate-300);
 }
 .post-meta > ul {
-  display: flex;
-  flex-direction: row;
-  gap: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
 }
 .post-comment-icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("/assets/icon-chat.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/icon-chat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .post-like-icon {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("/assets/icon-heart.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/icon-heart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .post-like-icon-active {
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("/assets/icon-heart-active.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/icon-heart-active.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }

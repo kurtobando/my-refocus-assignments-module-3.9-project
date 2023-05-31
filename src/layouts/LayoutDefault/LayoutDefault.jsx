@@ -3,15 +3,15 @@ import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 
 function Default() {
-  return (
-    <div>
-      <Navigation />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Navigation />
+            <main>
+                <Outlet />
+            </main>
+            <Footer />
+        </div>
+    );
 }
 
 export default Default;
