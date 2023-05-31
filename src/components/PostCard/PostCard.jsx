@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { PostsContext } from "../../pages/Posts";
 import "./PostCard.css";
 
@@ -17,13 +18,15 @@ function PostCard({ post }) {
         );
     }
 
-    function onPreview() {}
-
     return (
         <article className='post'>
-            <img className='post-image' src={post.image} alt={post.title} onClick={onPreview} />
+            <Link to={`/post/${post.id}`}>
+                <img className='post-image' src={post.image} alt={post.title} />
+            </Link>
             <div className='post-content'>
-                <h2 onClick={onPreview}>{post.title}</h2>
+                <Link to={`/post/${post.id}`}>
+                    <h2>{post.title}</h2>
+                </Link>
                 <p>{post.text}</p>
                 <div className='post-meta'>
                     <ul>

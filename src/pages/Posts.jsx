@@ -45,7 +45,13 @@ function Posts() {
                 </div>
             </div>
             <PostsContext.Provider value={{ posts, setPosts }}>
-                <PostsList posts={isFavorites ? posts.filter((post) => post.isLiked) : posts} />
+                <PostsList
+                    posts={
+                        isFavorites
+                            ? posts.filter((post) => post.isLiked).sort((a, b) => b.id - a.id)
+                            : posts.sort((a, b) => b.id - a.id)
+                    }
+                />
             </PostsContext.Provider>
         </section>
     );
