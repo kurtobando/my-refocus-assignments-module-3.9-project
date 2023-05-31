@@ -7,7 +7,6 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import App from "./App";
 import LayoutDefault from "./layouts/LayoutDefault/LayoutDefault";
 import Posts from "./pages/Posts";
 import PostCreate from "./pages/PostCreate";

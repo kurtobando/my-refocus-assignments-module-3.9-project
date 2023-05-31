@@ -1,0 +1,46 @@
+nav {
+  background: var(--blue-dark);
+  color: var(--white);
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+nav a.active {
+  color: var(--yellow);
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid var(--yellow);
+}
+nav button {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  nav > div {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .menu-burger {
+    display: none;
+  }
+  .menu-content {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .menu-content div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}

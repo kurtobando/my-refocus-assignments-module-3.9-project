@@ -1,0 +1,23 @@
+button {
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+.primary {
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 0.5rem;
+}
+.outline {
+  color: var(--blue);
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 0.5rem;
+}
+.outline-rounded {
+  color: var(--blue);
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 4rem;
+}
