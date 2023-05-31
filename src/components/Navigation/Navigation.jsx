@@ -1,6 +1,8 @@
 import "./Navigation.css";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Button from "../Button/Button";
+
 
 function Navigation() {
     const [toggle, setToggle] = useState(false);
@@ -9,7 +11,9 @@ function Navigation() {
         <nav className='nav w-full'>
             <div className='w-full max-width m-auto flex flex-col gap-2'>
                 <div className='flex items-center justify-between'>
-                    <img src='/assets/logo.png' alt='logo' />
+                    <NavLink to='/'>
+                        <img src='/assets/logo.png' alt='logo' />
+                    </NavLink>
                     <img
                         className='menu-burger'
                         src='/assets/icon-menu-burger.png'
@@ -19,21 +23,21 @@ function Navigation() {
                 </div>
                 <div className={toggle ? "flex flex-col gap-1 menu-content" : "hidden menu-content"}>
                     <div className='flex flex-col gap-1 font-medium'>
-                        <a className='active' href='/'>
+                        <NavLink className={({ isActive }) => isActive ? "current" : ""} to='/'>
                             Blog
-                        </a>
-                        <a href='/'>About Us</a>
-                        <a href='/'>Reviews</a>
+                        </NavLink>
+                        <NavLink to='/'>About Us</NavLink>
+                        <NavLink to='/'>Reviews</NavLink>
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <a href='/' className='sign-up font-bold'>
+                        <NavLink to='/' className='sign-up font-bold'>
                             Sign up
-                        </a>
-                        <a href='/'>
+                        </NavLink>
+                        <NavLink to='/'>
                             <Button theme='outline-rounded'>
                                 <span className='font-bold'>Log in</span>
                             </Button>
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

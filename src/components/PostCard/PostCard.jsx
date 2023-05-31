@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { PostsContext } from "../../pages/Posts";
-import "./Post.css";
+import "./PostCard.css";
 
-function Post({ post }) {
+function PostCard({ post }) {
     const { posts, setPosts } = useContext(PostsContext);
 
     function onLiked() {
@@ -17,11 +17,13 @@ function Post({ post }) {
         );
     }
 
+    function onPreview() {}
+
     return (
         <article className='post'>
-            <img className='post-image' src={post.image} alt={post.title} />
+            <img className='post-image' src={post.image} alt={post.title} onClick={onPreview} />
             <div className='post-content'>
-                <h2>{post.title}</h2>
+                <h2 onClick={onPreview}>{post.title}</h2>
                 <p>{post.text}</p>
                 <div className='post-meta'>
                     <ul>
@@ -48,4 +50,4 @@ function Post({ post }) {
     );
 }
 
-export default Post;
+export default PostCard;

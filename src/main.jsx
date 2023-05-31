@@ -12,8 +12,8 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<LayoutDefault />}>
             <Route index element={<Posts />} />
-            <Route path='post-create' element={<PostCreate />} />
-            <Route path='post-read/:id' element={<PostRead />} />
+            <Route path='post/create' element={<PostCreate />} />
+            <Route path='post/:id' element={<PostRead />} />
             <Route path='*' element={<NotFound />} />
         </Route>
     )
