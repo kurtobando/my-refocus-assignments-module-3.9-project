@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { PostsContext } from "../../pages/Posts";
+import { PostsContext } from "../../context/PostContext.js";
 import "./PostCard.css";
 
 function PostCard({ post }) {

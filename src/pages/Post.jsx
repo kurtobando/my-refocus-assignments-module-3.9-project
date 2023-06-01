@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
-import { PostsContext } from "../pages/Posts";
+import { PostsContext } from "../context/PostContext.js";
 import PostRead from "../components/PostRead/PostRead";
+import postsData from "../posts.json";
 
 function Post() {
     const post = useLoaderData();
@@ -30,10 +31,12 @@ function Post() {
 }
 
 async function PostLoader({ params }) {
-    let posts = window.localStorage.getItem("posts");
+    let posts = localStorage.getItem("posts");
+    if (!posts) {
+        localStorage.setItem("posts", JSON.stringify(postsData));
+    }
     posts = JSON.parse(posts);
     posts = posts.filter((post) => post.id == params.id);
-
     return posts;
 }
 

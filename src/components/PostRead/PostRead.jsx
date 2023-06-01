@@ -2,8 +2,8 @@ import "./PostRead.css";
 import { NavLink } from "react-router-dom";
 import CommentsList from "../CommentsList/CommentsList";
 import CommentForm from "../CommentForm/CommentForm";
-import { PostsContext } from "../../pages/Posts";
 import { useContext, useEffect, useState } from "react";
+import { PostsContext } from "../../context/PostContext.js";
 
 function PostRead(props) {
     const { posts, setPosts } = useContext(PostsContext);
@@ -26,6 +26,44 @@ function PostRead(props) {
         });
     }
 
+    function onAddComment(comment) {
+        setPosts(
+            posts.map((post) => {
+                if (post.id === props.post.id) {
+                    post.comments.push({
+                        text: comment,
+                        author: "Anonymous",
+                        date: new Date().toLocaleDateString("en-us", {
+                            month: "short",
+                            day: "numeric",
+                            year: "numeric",
+                        }),
+                        likes: 0,
+                        isLiked: false,
+                    });
+                }
+                return post;
+            })
+        );
+        setPost({
+            ...post,
+            comments: [
+                ...post.comments,
+                {
+                    text: comment,
+                    author: "Anonymous",
+                    date: new Date().toLocaleDateString("en-us", {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                    }),
+                    likes: 0,
+                    isLiked: false,
+                },
+            ],
+        });
+    }
+
     useEffect(() => {
         setPost(props.post);
     }, [props.post]);
@@ -38,7 +76,7 @@ function PostRead(props) {
             <div className='post-read-content'>
                 <NavLink to='/' className='post-read-back'>
                     <div className='flex items-center ' style={{ gap: "0.5rem" }}>
-                        <img src='/public/assets/icon-right.png' alt='' />
+                        <img src='/assets/icon-right.png' alt='' />
                         <span>Blog</span>
                     </div>
                 </NavLink>
@@ -53,19 +91,19 @@ function PostRead(props) {
                 <p className='post-read-text'>{post.text}</p>
                 <div className='post-read-stats'>
                     <div className='flex items-center'>
-                        <img src='/public/assets/icon-chat.png' alt='' />
+                        <img src='/assets/icon-chat.png' alt='' />
                         <span>{post.comments?.length}</span>
                     </div>
                     <div className='flex items-center'>
                         {post.isLiked ? (
-                            <img onClick={onLiked} src='/public/assets/icon-heart-active.png' alt='' />
+                            <img onClick={onLiked} src='/assets/icon-heart-active.png' alt='' />
                         ) : (
-                            <img onClick={onLiked} src='/public/assets/icon-heart.png' alt='' />
+                            <img onClick={onLiked} src='/assets/icon-heart.png' alt='' />
                         )}
                         <span>{post.likes}</span>
                     </div>
                 </div>
-                <CommentForm postId={post.id} />
+                <CommentForm onSubmit={onAddComment} />
                 <CommentsList comments={post.comments} />
             </div>
         </article>

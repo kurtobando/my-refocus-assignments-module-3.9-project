@@ -1,5 +1,5 @@
 import "./Comment.css";
-import { PostsContext } from "../../pages/Posts";
+import { PostsContext } from "../../context/PostContext.js";
 import { useContext, useEffect, useState } from "react";
 
 function Comment(props) {
@@ -42,9 +42,9 @@ function Comment(props) {
                     <span>{comment.date}</span>
                     <div className='flex items-center'>
                         {comment.isLiked ? (
-                            <img onClick={onLikeComment} src='/public/assets/icon-heart-active.png' alt='like' />
+                            <img onClick={onLikeComment} src='/assets/icon-heart-active.png' alt='like' />
                         ) : (
-                            <img onClick={onLikeComment} src='/public/assets/icon-heart.png' alt='like' />
+                            <img onClick={onLikeComment} src='/assets/icon-heart.png' alt='like' />
                         )}
                         <span>{comment.likes}</span>
                     </div>

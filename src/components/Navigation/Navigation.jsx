@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import Button from "../Button/Button";
 
-
 function Navigation() {
     const [toggle, setToggle] = useState(false);
 
@@ -23,7 +22,7 @@ function Navigation() {
                 </div>
                 <div className={toggle ? "flex flex-col gap-1 menu-content" : "hidden menu-content"}>
                     <div className='flex flex-col gap-1 font-medium'>
-                        <NavLink className={({ isActive }) => isActive ? "current" : ""} to='/'>
+                        <NavLink className={({ isActive }) => (isActive ? "current" : "")} to='/'>
                             Blog
                         </NavLink>
                         <NavLink to='/'>About Us</NavLink>

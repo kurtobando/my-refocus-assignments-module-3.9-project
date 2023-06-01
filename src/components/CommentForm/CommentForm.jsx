@@ -1,10 +1,8 @@
 import "./CommentForm.css";
 import Button from "../Button/Button";
-import { useState, useContext } from "react";
-import { PostsContext } from "../../pages/Posts";
+import { useState } from "react";
 
-function CommentForm({ postId }) {
-    const { posts, setPosts } = useContext(PostsContext);
+function CommentForm({ onSubmit = (comment) => {} }) {
     const [comment, setComment] = useState("");
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
@@ -13,25 +11,8 @@ function CommentForm({ postId }) {
         setIsButtonDisabled(comment.trim().length === 0);
     }
 
-    function onSend() {
-        setPosts(
-            posts.map((post) => {
-                if (post.id === postId) {
-                    post.comments.push({
-                        text: comment,
-                        author: "Anoyomous",
-                        date: new Date().toLocaleDateString("en-us", {
-                            month: "short",
-                            day: "numeric",
-                            year: "numeric",
-                        }),
-                        likes: 0,
-                        isLiked: false,
-                    });
-                }
-                return post;
-            })
-        );
+    function onClick() {
+        onSubmit(comment);
         setComment("");
         setIsButtonDisabled(true);
     }
@@ -39,8 +20,8 @@ function CommentForm({ postId }) {
     return (
         <div className='comment-form'>
             <h3>Leave a comment:</h3>
-            <textarea cols='30' rows='10' onChange={onChange}></textarea>
-            <Button disabled={isButtonDisabled} onClick={onSend}>
+            <textarea cols='30' rows='10' value={comment} onChange={onChange}></textarea>
+            <Button disabled={isButtonDisabled} onClick={onClick}>
                 Send
             </Button>
         </div>

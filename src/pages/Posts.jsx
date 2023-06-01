@@ -1,10 +1,9 @@
-import { useState, useEffect, useContext, createContext } from "react";
+import { useState, useEffect } from "react";
 import Button from "../components/Button/Button";
 import ButtonAddPost from "../components/ButtonAddPost/ButtonAddPost";
 import PostsList from "../components/PostsList/PostsList";
 import postsData from "../posts.json";
-
-export const PostsContext = createContext();
+import { PostsContext } from "../context/PostContext.js";
 
 function Posts() {
     const [posts, setPosts] = useState([]);
