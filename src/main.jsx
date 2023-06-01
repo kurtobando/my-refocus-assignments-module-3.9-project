@@ -5,7 +5,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import LayoutDefault from "./layouts/LayoutDefault/LayoutDefault";
 import Posts from "./pages/Posts";
 import PostCreate from "./pages/PostCreate";
-import Post from "./pages/Post";
+import Post, { PostLoader } from "./pages/Post";
 import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter(
@@ -13,7 +13,7 @@ const router = createBrowserRouter(
         <Route path='/' element={<LayoutDefault />}>
             <Route index element={<Posts />} />
             <Route path='post/create' element={<PostCreate />} />
-            <Route path='post/:id' element={<Post />} />
+            <Route path='post/:id' element={<Post />} loader={PostLoader} />
             <Route path='*' element={<NotFound />} />
         </Route>
     )

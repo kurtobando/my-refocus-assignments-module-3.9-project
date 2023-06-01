@@ -1,0 +1,29 @@
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2rem;
+}
+.comment-form h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+}
+.comment-form textarea {
+    margin-top: 0.5rem;
+    border: 1px solid var(--gray-slate-200);
+    border-radius: 6px;
+}
+.comment-form button {
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .comment-form h3 {
+        font-size: 24px;
+    }
+    .comment-form button {
+        width: 40%;
+        margin-left: auto;
+    }
+}

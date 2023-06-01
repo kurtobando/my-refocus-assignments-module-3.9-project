@@ -1,0 +1,23 @@
+.comment-lists {
+    margin-top: 2rem;
+}
+.comment-lists h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+}
+.comment-lists-content {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .comment-lists button {
+        width: 150px;
+    }
+    .comment-lists h3 {
+        font-size: 24px;
+    }
+}
