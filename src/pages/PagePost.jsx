@@ -4,7 +4,7 @@ import { PostsContext } from "../context/PostContext.js";
 import PostRead from "../components/PostRead/PostRead";
 import postsData from "../posts.json";
 
-function Post() {
+function PagePost() {
     const post = useLoaderData();
     const [posts, setPosts] = useState([]);
 
@@ -40,5 +40,5 @@ async function PostLoader({ params }) {
     return posts;
 }
 
-export default Post;
+export default PagePost;
 export { PostLoader };

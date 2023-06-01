@@ -5,7 +5,7 @@ import PostsList from "../components/PostsList/PostsList";
 import postsData from "../posts.json";
 import { PostsContext } from "../context/PostContext.js";
 
-function Posts() {
+function PagePosts() {
     const [posts, setPosts] = useState([]);
     const [isFavorites, setIsFavorites] = useState(false);
 
@@ -54,4 +54,4 @@ function Posts() {
     );
 }
 
-export default Posts;
+export default PagePosts;

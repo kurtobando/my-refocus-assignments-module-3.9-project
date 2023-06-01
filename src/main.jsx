@@ -3,18 +3,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import LayoutDefault from "./layouts/LayoutDefault/LayoutDefault";
-import Posts from "./pages/Posts";
-import PostCreate from "./pages/PostCreate";
-import Post, { PostLoader } from "./pages/Post";
-import NotFound from "./pages/NotFound";
+import PagePosts from "./pages/PagePosts.jsx";
+import PagePostCreate from "./pages/PagePostCreate.jsx";
+import PagePost, { PostLoader } from "./pages/PagePost.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<LayoutDefault />}>
-            <Route index element={<Posts />} />
-            <Route path='post/create' element={<PostCreate />} />
-            <Route path='post/:id' element={<Post />} loader={PostLoader} />
-            <Route path='*' element={<NotFound />} />
+            <Route index element={<PagePosts />} />
+            <Route path='post/create' element={<PagePostCreate />} />
+            <Route path='post/:id' element={<PagePost />} loader={PostLoader} />
+            <Route path='*' element={<PageNotFound />} />
         </Route>
     )
 );
