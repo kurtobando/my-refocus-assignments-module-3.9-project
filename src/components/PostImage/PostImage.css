@@ -1,0 +1,34 @@
+.image-uploader{
+    height: 200px;
+    background: var(--gray-slate-50);
+    background-position: center center;
+    display: grid;
+    place-items: center;
+    border-radius: 5px;
+}
+.image-uploader:hover {
+    background-blend-mode: screen;
+}
+.image-uploader:hover > label {
+    display: block!important;
+    cursor: pointer;
+}
+.image-uploader input {
+    display: none;
+}
+.image-uploader label {
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    padding: 1rem   ;
+}
+.image-uploader:hover .spinner-container + label,
+.spinner-container + label {
+    display: none!important;
+}
+
+@media only screen and (min-width: 600px) {
+    .image-uploader{
+        height: 320px;
+    }
+}
